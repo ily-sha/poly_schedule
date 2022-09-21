@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:outlineAmbientShadowColor="@color/white"
+    android:outlineSpotShadowColor="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="12dp"
+    android:layout_marginHorizontal="8dp"
+    app:cardCornerRadius="16dp"
+    android:backgroundTint="@color/lesson_item"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_marginVertical="8dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="12dp"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="8:00 - 9:00"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+            <androidx.cardview.widget.CardView
+                android:id="@+id/lesson_type"
+                android:outlineAmbientShadowColor="@color/white"
+                android:outlineSpotShadowColor="@color/white"
+                app:cardCornerRadius="12dp"
+                android:layout_width="wrap_content"
+                android:backgroundTint="@color/main"
+                android:layout_alignParentRight="true"
+                android:layout_height="wrap_content">
+                <TextView
+
+                    android:paddingHorizontal="12dp"
+                    android:layout_gravity="center_vertical"
+                    android:paddingVertical="4dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@color/white"
+                    android:text="Лабораторная"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/deadline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:layout_toLeftOf="@id/lesson_type"
+                android:layout_marginEnd="12dp"
+                android:backgroundTint="@color/main"
+                android:outlineAmbientShadowColor="@color/white"
+                android:outlineSpotShadowColor="@color/white"
+                app:cardCornerRadius="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingHorizontal="12dp"
+                    android:paddingVertical="4dp"
+                    android:text="Дедлайн"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+            </androidx.cardview.widget.CardView>
+
+
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/subject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Физическая культура"
+            android:layout_marginBottom="4dp"
+            android:textColor="@color/black"
+            android:textSize="22sp"/>
+        <LinearLayout
+            android:id="@+id/teacher_layout"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginBottom="2dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_teacher"
+                android:layout_width="15dp"
+                android:layout_height="15dp"/>
+            <TextView
+                android:id="@+id/teacher"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_marginLeft="4dp"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Петров Андрей"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_location"
+                android:layout_width="16dp"
+                android:layout_height="16dp">
+            </ImageView>
+            <TextView
+                android:id="@+id/location"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_marginLeft="4dp"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cпорткомплекс"/>
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>
